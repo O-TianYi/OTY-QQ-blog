@@ -151,6 +151,268 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-markdown基本语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/OTY-QQ-blog/2019/12/04/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">markdown基本语法</a>
+    </h1>
+  
+
+        
+        <a href="/OTY-QQ-blog/2019/12/04/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2019-12-04T14:53:13.950Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="markdown基本语法"><a href="#markdown基本语法" class="headerlink" title="markdown基本语法"></a>markdown基本语法</h2><h3 id="零、颜色设置"><a href="#零、颜色设置" class="headerlink" title="零、颜色设置"></a>零、颜色设置</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$\color&#123;#FF0000（颜色）&#125;&#123;注意（文字）&#125;$</span></pre></td></tr></table></figure>
+
+<p>注意，可能会保错的问题：</p>
+<ul>
+<li><p>在内容里 # 不要与 { 紧挨着，解决方法很特殊，一般只在{ 与 # 之间添加一个空格即可。</p>
+</li>
+<li><p>出现错误时，黑色我用的是#000而不是black，然后在执行hexo g会有如下报错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Template render error: (unknown path)  Error: expected end of comment, got end of file  ...</span></pre></td></tr></table></figure>
+</li>
+<li><p>尽量不要将<strong><strong>{和{</strong></strong>连接在一起，在<strong><strong>{和{</strong></strong>间添加空格**。</p>
+</li>
+</ul>
+<h3 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h3><p>在想要设置为标题的文字前面加#来表示</p>
+<p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+<p>注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># 这是一级标题 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">## 这是二级标题 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">### 这是三级标题 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">#### 这是四级标题 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">##### 这是五级标题 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">###### 这是六级标题</span></pre></td></tr></table></figure>
+
+
+
+<p>效果：</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5Cblog%5Csource_posts%5Cimages%5Cmarkdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%9B%BE%E7%89%87%5C1.png" alt="img"></p>
+<h3 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h3><ul>
+<li><strong>加粗</strong></li>
+</ul>
+<p>要加粗的文字左右分别用两个*号包起来</p>
+<ul>
+<li><strong>斜体</strong></li>
+</ul>
+<p>要倾斜的文字左右分别用一个*号包起来</p>
+<ul>
+<li><strong>斜体加粗</strong></li>
+</ul>
+<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<ul>
+<li><strong>删除线</strong></li>
+</ul>
+<p>要加删除线的文字左右分别用两个~~号包起来</p>
+<p><strong>这是加粗的文字</strong> <em>这是倾斜的文字</em>` <strong><em>这是斜体加粗的文字</em></strong> <del>这是加删除线的文字</del></p>
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C2fdc802d4ade4bd19caf1d8d94dd98dd%5Cclipboard.png" alt="img"></p>
+<h3 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h3><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;</p>
+<p>n个…</p>
+<p>貌似可以一直加下去，但没神马卵用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&gt;&gt;这是引用的内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C49034b6830c94a479652d12810adc925%5Cclipboard.png" alt="img"></p>
+<h3 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h3><p>三个或者三个以上的 - 或者 * 都可以。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">--- </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">---- </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">*** </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">*****</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C2e63adbdd9d14be5aeccb08a9332d067%5Cclipboard.png" alt="img"></p>
+<h3 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h3><p>语法：</p>
+<p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。 图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)</span></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<p>![blockchain](<a href="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/" target="_blank" rel="noopener">https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/</a> u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg “区块链”)</p>
+<h3 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h3><p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;) title可加可不加</span></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">[简书](http:&#x2F;&#x2F;jianshu.com) </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">[百度](http:&#x2F;&#x2F;baidu.com)</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C05c61653231e424cb414e3084eb5d09e%5Cclipboard.png" alt="img"></p>
+<h3 id="六、列表"><a href="#六、列表" class="headerlink" title="六、列表"></a>六、列表</h3><p><strong>无序列表：</strong></p>
+<p>无序列表用 - + * 任何一种都可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">- 列表内容 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">+ 列表内容 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">* 列表内容 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">注意：- + * 跟内容之间都要有一个空格</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5Cad7664f312604cb5be1ea84f84148166%5Cclipboard.png" alt="img"></p>
+<p><strong>有序列表：</strong></p>
+<p>数字加点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1.列表内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2.列表内容 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3.列表内容 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">注意：序号跟内容之间要有空格</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C3c66347d31d54944826cb053c5453dba%5Cclipboard.png" alt="img"></p>
+<p><strong>列表嵌套：</strong></p>
+<p>上一级和下一级之间敲三个空格即可</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C1700dbb95aeb4fe68c1120c8411dab60%5Cclipboard.png" alt="img"></p>
+<h3 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h3><p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">---|:--:|---:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">内容|内容|内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">内容|内容|内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">第二行分割表头和内容。</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">- 有一个就行，为了对齐，多加了几个</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">文字默认居左</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">-两边加：表示文字居中</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">-右边加：表示文字居右</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">姓名|技能|排行</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">--|:--:|--:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">刘备|哭|大哥</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">关羽|打|二哥</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">张飞|骂|三弟</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C7a9f7a8d9b6b4b1a9ed7029ec97e4f69%5Cclipboard.png" alt="img"></p>
+<h3 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h3><p>语法：</p>
+<p>单行代码：代码之间分别用一个反引号包起来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#96;代码内容&#96;</span></pre></td></tr></table></figure>
+
+<p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;小括号是没用的  代码...  代码...  代码...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span></pre></td></tr></table></figure>
+
+<p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p>
+<p>实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#96;create database hero;&#96; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">function fun()&#123;         echo &quot;这是一句非常牛逼的代码&quot;;    &#125; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">fun();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)&#x2F;&#x2F;（）只是为了展示的时候被转义，使用的时候去掉</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C268742014fae47b5ad8083c6838be71a%5Cclipboard.png" alt="img"></p>
+<h3 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">flow st&#x3D;&gt;start: 开始 op&#x3D;&gt;operation: My Operation cond&#x3D;&gt;condition: Yes or No? e&#x3D;&gt;end st-&gt;op-&gt;cond cond(yes)-&gt;e cond(no)-&gt;op &amp;</span></pre></td></tr></table></figure>
+
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5Ccd7ce36e12174140ac919a278870fac0%5Cclipboard.png" alt="img"></p>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p><strong>换行</strong></p>
+<p>直接在要换行的语句最后打上2个空格。</p>
+<p><strong>空格</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&amp;nbsp;</span></pre></td></tr></table></figure>
+
+<p><strong>空行</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&amp;emsp;</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/OTY-QQ-blog/2019/12/04/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hexo个人博客更换主题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/OTY-QQ-blog/2019/12/04/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">hexo个人博客更换主题</a>
+    </h1>
+  
+
+        
+        <a href="/OTY-QQ-blog/2019/12/04/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2019-12-04T14:17:18.580Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>更换主题：</p>
+<h3 id="1、案例选择的主题的路径-：https-github-com-litten-hexo-theme-yilia，更多主题自行查找。"><a href="#1、案例选择的主题的路径-：https-github-com-litten-hexo-theme-yilia，更多主题自行查找。" class="headerlink" title="1、案例选择的主题的路径**：https://github.com/litten/hexo-theme-yilia，更多主题自行查找。"></a>1、案例选择的主题的路径**：<a href="https://github.com/litten/hexo-theme-yilia，更多主题自行查找。">https://github.com/litten/hexo-theme-yilia，更多主题自行查找。</a></h3><h3 id="2、克隆上面地址的使用的命令"><a href="#2、克隆上面地址的使用的命令" class="headerlink" title="2、克隆上面地址的使用的命令"></a>2、克隆上面地址的使用的命令</h3><p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C0e72003b3f5b4db08f08a2cb3545d6b5%5C1575257690(1).png" alt="img"></p>
+<h3 id="3、在所需要设置主题的博客的文件夹夹下命令行输入复制的命令："><a href="#3、在所需要设置主题的博客的文件夹夹下命令行输入复制的命令：" class="headerlink" title="3、在所需要设置主题的博客的文件夹夹下命令行输入复制的命令：**"></a>3、在所需要设置主题的博客的文件夹夹下命令行输入复制的命令：**</h3><p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C0249ff5db3f343e4a17d37fbe6d28345%5Cclipboard.png" alt="img"></p>
+<p>主题下载完成后，在个人博客的文件夹/themes/yilia（下载主题的文件夹）</p>
+<p>生成的yilia文件夹的内容：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C913574b447974627b8a955ef5cf272fb%5Cclipboard.png" alt="img"></p>
+<h3 id="4、设置对应的个人博客文件夹中的-config-yml文件："><a href="#4、设置对应的个人博客文件夹中的-config-yml文件：" class="headerlink" title="4、设置对应的个人博客文件夹中的_config.yml文件：**"></a>4、设置对应的个人博客文件夹中的_config.yml文件：**</h3><p><em>技巧：记事本快速查找crtl+F，输入theme即可快速找到以下位置。</em></p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C32ddc2c993c1475685244442d9898396%5C1575258243(1).png" alt="img"></p>
+<h3 id="5、运行"><a href="#5、运行" class="headerlink" title="5、运行"></a>5、运行</h3><p>注意：需要清除缓存文件，否则就会显示以前的主题：</p>
+<p><strong>（1）、清除缓存：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo clean</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo g</span></pre></td></tr></table></figure>
+
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C9f6db3f02ca347d98c73b831955e7974%5Cclipboard.png" alt="img"></p>
+<p><strong>（2）、本地运行:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo s</span></pre></td></tr></table></figure>
+
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5Cc8d55fb664984df0bd30ff0b101f1a28%5Cclipboard.png" alt="img"></p>
+<p>验证：浏览器范文提示地址。</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C71d8c013fba5446a88cc7a4d23cff1f4%5Cclipboard.png" alt="img"></p>
+<p><strong>（3）、上传到github上：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo d(前提是必须也是清除了缓存，否则上传的是缓存)</span></pre></td></tr></table></figure>
+
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5C9c7f6f820da04b41af31255ec03e08ca%5Cclipboard.png" alt="img"></p>
+<p>访问：</p>
+<p><img src="D:%5C%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5Coty1289739923@163.com%5Cc41cf1378dd14d8abe90ff2940f11f5f%5Cclipboard.png" alt="img"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/OTY-QQ-blog/2019/12/04/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo创建第一个博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -158,7 +420,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">canvas特效笔记</a>
+      <a class="article-title" href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">hexo创建属于自己的博客</a>
     </h1>
   
 
@@ -222,70 +484,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/OTY-QQ-blog/2019/12/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/OTY-QQ-blog/2019/12/02/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-02T00:43:35.651Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p><a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/one-command-deployment.html</a>)</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/OTY-QQ-blog/2019/12/02/hello-world/">展开全文 >></a>
         </p>
       
 
