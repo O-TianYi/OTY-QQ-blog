@@ -151,27 +151,65 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-第一篇博客w文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo创建第一个博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/OTY-QQ-blog/2019/12/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2w%E6%96%87%E7%AB%A0/">第一篇博客w文章</a>
+      <a class="article-title" href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">canvas特效笔记</a>
     </h1>
   
 
         
-        <a href="/OTY-QQ-blog/2019/12/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2w%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2019-12-02T00:59:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+        <a href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2019-12-04T12:33:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="实操："><a href="#实操：" class="headerlink" title="实操："></a>实操：</h4><p>&emsp;</p>
+<h3 id="1、在安装node的前提下，没有安装自行百度安装"><a href="#1、在安装node的前提下，没有安装自行百度安装" class="headerlink" title="1、在安装node的前提下，没有安装自行百度安装"></a>1、在安装node的前提下，没有安装自行百度安装</h3><p>查看是否安装了node：<br>命令行输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">node -v</span></pre></td></tr></table></figure>
+<p><img src="../images/1.png" alt="截图"></p>
+<p>&emsp;</p>
+<h3 id="2、然后安装Hexo"><a href="#2、然后安装Hexo" class="headerlink" title="2、然后安装Hexo"></a>2、然后安装Hexo</h3><p>全局安装,装到window上或者主文件目录下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm i -g hexo-cli</span></pre></td></tr></table></figure>
+<p>安装是否成功输入：<code>hexo -v</code>查看<br><img src="../images/2.png" alt="截图"></p>
+<p><strong>$\color{red}{注意:}$</strong></p>
+<ul>
+<li>如果你嫌弃npm下载慢，你可以npm改变为淘宝镜像:<br><img src="../images/3.png" alt="截图"><br>查看是否成功：<code>cnpm -v</code></li>
+</ul>
+<p> &emsp;</p>
+<h3 id="3、创建博客—-初始化博客"><a href="#3、创建博客—-初始化博客" class="headerlink" title="3、创建博客—-初始化博客"></a>3、创建博客—-初始化博客</h3><p><strong>(1)、创建一个blog文件夹，进入blog文件夹下初始化hexo：</strong><br><strong>$\color{red}{注意:新建的文件夹不支持带中文的。}$</strong><br><img src="../images/4.png" alt="截图"><br>验证打开blog目录是否生成以下文档：<br><img src="../images/5.png" alt="截图"></p>
+<p><strong>(2)启动博客</strong><br><img src="../images/6.png" alt="截图"><br>验证浏览器输入下面地址查看：<br><img src="../images/7.png" alt="截图"></p>
+<p>&emsp;</p>
+<h3 id="4、新建文章"><a href="#4、新建文章" class="headerlink" title="4、新建文章"></a>4、新建文章</h3><p><strong>（1）新建一个文章：hexo n “第一片博客文章”</strong><br><img src="../images/4-1.png" alt="截图"><br>验证：blog/source/_posts文件夹下：<br><img src="../images/4-2.png" alt="截图"><br>新建的md文件的内容：<br><img src="../images/4-3.png" alt="截图"><br><strong>（2）可以直接使用vscode等软件打开md文件进行文章的编辑。</strong><br><strong>（3）编辑完成后重新本地启动：</strong><br>命令：<code>hexo s</code>或者<code>hexo server</code> :启动本地服务器<br><img src="../images/4-4.png" alt="截图"><br>浏览器输入上面提示的地址：<br><img src="../images/4-5.png" alt="截图"></p>
+<p>&emsp;</p>
+<h3 id="5、把个人博客上传到远程仓库github上。"><a href="#5、把个人博客上传到远程仓库github上。" class="headerlink" title="5、把个人博客上传到远程仓库github上。"></a>5、把个人博客上传到远程仓库github上。</h3><p><strong>（1）登陆github并创建一个空仓库</strong><br><img src="../images/5-1.png" alt="截图"><br>空仓库建立完成后的亚子：<br>注意：该生成的仓库地址后面需要在_config.yml文件有用处。<br><img src="../images/5-2.png" alt="截图"></p>
+<p><strong>（2）在需要上传的文件目录下安装一个插件</strong></p>
+<ul>
+<li>命令行输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm i --save hexo-deployer-git</span></pre></td></tr></table></figure>
+<img src="../images/5-3.png" alt="截图"><br>验证该插件是否安装成:查看blog文件：<br><img src="../images/5-4.png" alt="截图"></li>
+<li>修改_config.yml文件：（对应上面的仓库的地址）<br>原来的亚子:<br><img src="../images/5-5.png" alt="截图"><br>修改完后的亚子:<br><img src="../images/5-6.png" alt="截图"></li>
+</ul>
+<ul>
+<li>修改完配置文件，就开始部署到远程仓库上<br>命令：<code>hexo d</code>（部署网站,即推送到远程仓库上，注意第二次提交时候需要结合clean一起使用）<br>$\color{red}{注意：有时候可能需要输入github的用户名和密码}$<br><img src="../images/5-7.png" alt="截图"><br>验证，刷新刚才的新建仓库，显示下图即可说明成功：<br><img src="../images/5-8.png" alt="截图"></li>
+</ul>
+<p><strong>（3）浏览器访问：</strong><br>查看访问的地址：</p>
+<ul>
+<li>点击刚才仓库的setting，<br><img src="../images/5-9.png" alt="截图"></li>
+<li>如下操作，复制地址：<br><img src="../images/5-10.png" alt="截图"><br>复制该地址去地址栏访问：<br>注意：有时候会刷新比较慢，所以要多刷新几遍。<br><img src="../images/5-11.png" alt="截图"></li>
+</ul>
+<p><strong>（4）解决远程仓库没有样式的问题：</strong><br>1、修改_config.yml:<br>$\color{red}{原来：}$<br><img src="../images/5-12.png" alt="截图"><br>$\color{red}{修改后：。}$<br><img src="../images/5-13.png" alt="截图"><br>$\color{red}{或者自己仓库的地址：}$（在自己仓库查看地址）<br><img src="../images/5-14.png" alt="截图"><br>$\color{red}{又或者带不带引号都可以：}$<br><img src="../images/5-15.png" alt="截图"><br>$\color{red}{一般填仓库的地址：（图片与上面的例子不一样，只供提供地址在哪复制）}$<br><img src="../images/5-16.png" alt="截图"></p>
+<p>2、重新提交：<br>直接推送上去是不行的，即直接输入命令:hexo d<br>不会重新帮你提交。<br><img src="../images/5-17.png" alt="截图"><br>正确操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hexo clean（用于清理缓存文件）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo g&#x2F;hexo generate （于生成静态文件）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">hexo d  （用于部署网站，或者两个一起：hexo g -d  指定生成后部署）</span></pre></td></tr></table></figure>
+<p>才会重新提交到github上：<br><img src="../images/5-18.png" alt="截图"><br>github上会更新：<br><img src="../images/5-19.png" alt="截图"><br>完成后得出的是，下面的地址不是上面的地址，具体在仓库的setting上寻找地址来访问。<br><img src="../images/5-20.png" alt="截图"></p>
+<p><em>##### 最后，这是第一篇博客可能排版不好，以后会多多参考别人的。</em></p>
+
       
 
       
@@ -183,7 +221,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/OTY-QQ-blog/2019/12/02/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2w%E6%96%87%E7%AB%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/OTY-QQ-blog/2019/12/04/hexo%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
@@ -234,18 +272,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/one-command-deployment.html</a>)</p>
 
       
 
